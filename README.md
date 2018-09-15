@@ -1,6 +1,7 @@
 # Project_1
 
-Deployment Link: <a href="https://movie-schedule-me.firebaseapp.com/">Firebase Deployment</a> /n
+Deployment Link: <a href="https://movie-schedule-me.firebaseapp.com/">Firebase Deployment</a>
+
 Project Title: Social Movie Scheduler
 
 Team Members: Danielle Doty, Alicia Collins, Jason Forman
