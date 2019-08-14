@@ -1,71 +1,78 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+	font-family: 'Montserrat', sans-serif;
 }
-body,html {
-    width: 100%;
+body,
+html {
+	width: 100%;
 }
 /* header */
-#header{
-    height: 192px;
-    background: url("../images/header_med.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    border-style: ridge;
-    border-width: 3px;
-    border-color: #a79c93;
+#header {
+	height: 100px;
+	background: url('../images/header_med.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border-style: ridge;
+	border-width: 3px;
+	border-color: #a79c93;
 }
-#headerButtons{
-    position: absolute;
-    bottom: -24vh;
-    left: 84.5vw;
+#headerButtons {
+	position: relative;
+	top: 100px;
+	right: 20px;
 }
 /* map */
- /* Always set the map height explicitly to define the size of the div
+/* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-#map{
-    height: 75vh;
-    z-index: 1;
-    border-style: ridge;
-    border-width: 1px;
-    border-color: #a79c93;
+#map {
+	height: 300px;
+	width: 300px;
+	z-index: 1;
+	border-style: ridge;
+	border-width: 1px;
+	border-color: #a79c93;
 }
-#filterButtons{
-    z-index: 9999; 
-    position: absolute;
-    bottom: 40vh;
-    left: 90vw;
+#filterButtons {
+	z-index: 9999;
+	position: absolute;
+	bottom: 40vh;
+	left: 90vw;
 }
 
-#buttondiv{
-    height:2px;
+#buttondiv {
+    position: absolute;
+	left: 5px;
+	top: 500px;
+	height: 200px;
+	width: 50px;
 }
 /* chat */
-h6{
-    font-family: 'Limelight', sans-serif;
-    background-color: #04060f;
-    color: whitesmoke;
-    text-align: center;
+h6 {
+	font-family: 'Limelight', sans-serif;
+	background-color: #04060f;
+	color: whitesmoke;
+	text-align: center;
 }
-#chat{
-    height: 1000px;
-    padding-left: 0px; 
-     padding-right: 0px;
-     margin-left: 0px;
-     margin-right: 0px;
+#chat {
+	height: 1000px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
-#userName{
-    border-color: #a79c93;
+#userName {
+	border-color: #a79c93;
 }
-#text{
-    border-color: #a79c93;
+#text {
+	border-color: #a79c93;
 }
-#post{
-    background-color: #c1403d;
-    color: whitesmoke;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 8px;
-    border: none;
-    margin-top: 2px;
+#post {
+	background-color: #c1403d;
+	color: whitesmoke;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 8px;
+	border: none;
+	margin-top: 2px;
 }
 
 /* button[type="submit"] {
@@ -75,207 +82,204 @@ h6{
     background-color:#04060F;
 } */
 
-.odd{
-    background-color: whitesmoke; 
+.odd {
+	background-color: whitesmoke;
 }
-.even{
-    background-color: #0294A5;
-    color: whitesmoke;
+.even {
+	background-color: #0294a5;
+	color: whitesmoke;
 }
 /* results */
-#resultsHeader{
-    width: 100%;
-    padding: 0px;
+#resultsHeader {
+	width: 100%;
+	padding: 0px;
 }
-#results{
-    height: 1000px;
+#results {
+    height: auto;
 }
-#vote{
-    height: 192 px;
+#vote {
+	height: 192 px;
 }
 /* #resultsImage{
     height:100%;
 } */
-#resultsField{
-    margin-top: 0px;
+#resultsField {
+	margin-top: 0px;
 }
-.time{
-    height: 5vh;
+.time {
+	height: 5vh;
 }
-#clearTimeVotesBtn{
-    margin-left: 2px;
-    background-color: #c1403d;  
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
+#clearTimeVotesBtn {
+	margin-left: 2px;
+	background-color: #c1403d;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
-#endTimeVotingBtn{
-    margin-left: 2px;
-    background-color: #c1403d;  
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;   
+#endTimeVotingBtn {
+	margin-left: 2px;
+	background-color: #c1403d;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
 
-#getDate{
-    height: 10vh;
-    width: 10vw;
+#getDate {
+	height: 10vh;
+	width: 10vw;
 }
-#getZip{
-    height: 10vh;
-    width: 10vw;
+#getZip {
+	height: 10vh;
+	width: 10vw;
 }
-#submitDateAndZip{
-    margin-left: 2px;
-    background-color: #c1403d;  
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
-    height: 5vh;
-    width: 7vw;
+#submitDateAndZip {
+	margin-left: 2px;
+	background-color: #c1403d;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
+	height: 5vh;
+	width: 7vw;
 }
 /* calendar */
 
 #sidebar-wrapper {
-    margin-right: -150px;
-    right: 70px;
-    width: 25vh;
-    background: #222;
-    height: 100%;
-    z-index: 10000;
-    transition: all .4s ease 0s;
+	margin-right: -150px;
+	right: 70px;
+	width: 25vh;
+	background: #222;
+	height: 100%;
+	z-index: 10000;
+	transition: all 0.4s ease 0s;
 }
 
 .sidebar-nav {
-    display: block;
-    float: left;
-    width: 150px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	display: block;
+	float: left;
+	width: 150px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-#vote{
-    background-color:#d6cbc2;
+#vote {
+	background-color: #d6cbc2;
 }
-#clearVotesBtn{
-    float: right;
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
+#clearVotesBtn {
+	float: right;
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
 }
-#endMovieVotingBtn{
-    float: right;
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
+#endMovieVotingBtn {
+	float: right;
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
 }
-p{
-    color:#04060F;  
-    display: inline-block;
-    padding: 7px;
-    border-style: ridge;
-    border-width: 1px;
-    border-color: #04060F;
-    justify-content: space-evenly;
+p {
+	color: #04060f;
+	display: inline-block;
+	padding: 7px;
+	border-style: ridge;
+	border-width: 1px;
+	border-color: #04060f;
+	justify-content: space-evenly;
 }
 /* dashboard */
-#userPhoto{
-    border-radius: 50%;
-    width: 20%;
-    margin-top: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #0294A5;
+#userPhoto {
+	border-radius: 50%;
+	width: 20%;
+	margin-top: 20px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #0294a5;
 }
-#newEvent{
-    background-color: #c1403d;
-    color: whitesmoke;
-    border-radius: 8px;
-    border: none;
-    padding: 0px;
+#newEvent {
+	background-color: #c1403d;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
+	padding: 0px;
 }
-#accountInfo{
-    border-style: ridge;
-    border-width: 1px;
-    border-color: #a79c93;
+#accountInfo {
+	border-style: ridge;
+	border-width: 1px;
+	border-color: #a79c93;
 }
-h5{
-    text-align: center;
+h5 {
+	text-align: center;
 }
-#editUserInfo{
-    position: relative;
-    left:735px;
-    margin-bottom: 5px;
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
-    align-content: center;
+#editUserInfo {
+	position: relative;
+	left: 735px;
+	margin-bottom: 5px;
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
+	align-content: center;
 }
 /* authentication */
-#authenticationHeader{
-    height: 192px;
-    background: url("../images/header_med.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
+#authenticationHeader {
+	height: 192px;
+	background: url('../images/header_med.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
-#logInForm{
-    padding: 5px;
-    border-style: ridge;
-    border-width: 2px;
-    border-color: #a79c93;
+#logInForm {
+	padding: 5px;
+	border-style: ridge;
+	border-width: 2px;
+	border-color: #a79c93;
 }
-#signUpForm{
-    padding: 5px;
-    border-style: ridge;
-    border-width: 2px;
-    border-color: #a79c93;
+#signUpForm {
+	padding: 5px;
+	border-style: ridge;
+	border-width: 2px;
+	border-color: #a79c93;
 }
-#btnLogin{
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
+#btnLogin {
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
-#btnSignUp{
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
+#btnSignUp {
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
-#btnLogout{
-    background-color:#04060F;
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
+#btnLogout {
+	background-color: #04060f;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
-#createUser{
-    background-color: #c1403d;
-    color:whitesmoke;
-    border-radius: 8px;
-    border: none;
+#createUser {
+	background-color: #c1403d;
+	color: whitesmoke;
+	border-radius: 8px;
+	border: none;
 }
 
 /* responsiveness */
 /* Phones */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #header {
-        height: 96px;
-        background: url("../images/header_small.png"); 
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    #headerButtons{
-        position: absolute;
-        bottom: -18vh;
-        left: -3vw;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+	#header {
+		height: 96px;
+		background: url('../images/header_small.png');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#headerButtons {
+		position: absolute;
+		bottom: -18vh;
+		left: -3vw;
+	}
 
-    /* #newEvent{
+	/* #newEvent{
         background-color: #c1403d;
         color: whitesmoke;
         font-family: 'Montserrat', sans-serif;
@@ -290,89 +294,87 @@ h5{
 
     } */
 
-    #map{
-        height: 35vh;
-        z-index: 1;
-    }
-    #filterButtons{
-        z-index: 9999; 
-        position: absolute;
-        bottom: 55vh;
-        left: 80vw;
-    }
-    img{
-        width: 20px;  height: 20px 
-    }
-    #chat{
-       height: 200px;
-       padding-left: 0px; 
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-   }
-   #userName{
-       width:25%;
-   }
-   #text{
-    width:25%;
-}
-   #results{
-   height: 500px;
-   }
-   .poster{
-    width: 30px;
-    height: 60px;
-}
-   #vote{
-    height: 96px;
-    }
-    p{
-        color:#04060F;  
-        display: inline-block;
-        border-style: ridge;
-        border-width: 1px;
-        border-color: #04060F;
-        font-size: xx-small;
-    }
-    #clearVotesBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #endMovieVotingBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #resultsImage{
-    height:80%;
-    }
+	#map {
+		height: 35vh;
+		z-index: 1;
+	}
+	#filterButtons {
+		z-index: 9999;
+		position: absolute;
+		bottom: 55vh;
+		left: 80vw;
+	}
+	img {
+		width: 20px;
+		height: 20px;
+	}
+	#chat {
+		height: 200px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#userName {
+		width: 25%;
+	}
+	#text {
+		width: 25%;
+	}
+	#results {
+		height: 500px;
+	}
+	.poster {
+		width: 30px;
+		height: 60px;
+	}
+	#vote {
+		height: 96px;
+	}
+	p {
+		color: #04060f;
+		display: inline-block;
+		border-style: ridge;
+		border-width: 1px;
+		border-color: #04060f;
+		font-size: xx-small;
+	}
+	#clearVotesBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#endMovieVotingBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#resultsImage {
+		height: 80%;
+	}
 }
 /* tablets */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 812px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #header {
-        height: 96px;
-        background: url("../images/header_small.png"); 
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    #headerButtons{
-        position: absolute;
-        bottom: -16vh;
-        left: 75vw;
-    }
+@media only screen and (min-device-width: 812px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	#header {
+		height: 96px;
+		background: url('../images/header_small.png');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#headerButtons {
+		position: absolute;
+		bottom: -16vh;
+		left: 75vw;
+	}
 
-    /* #newEvent{
+	/* #newEvent{
         background-color: #c1403d;
         color: whitesmoke;
         font-family: 'Montserrat', sans-serif;
@@ -387,147 +389,146 @@ h5{
 
     } */
 
-    #map{
-        height: 35vh;
-        z-index: 1;
-    }
-    #filterButtons{
-        z-index: 9999; 
-        position: absolute;
-        bottom: 55vh;
-        left: 92vw;
-    }
-    img{
-        width: 20px;  height: 20px 
-    }
-    #chat{
-       height: 200px;
-       padding-left: 0px; 
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-   }
-   #userName{
-       width:25%;
-   }
-   #text{
-    width:25%;
-}
-   #results{
-   height: 500px;
-   }
-   .poster{
-    width: 30px;
-    height: 60px;
-}
-   #vote{
-    height: 96px;
-    }
-    p{
-        color:#04060F;  
-        display: inline-block;
-        border-style: ridge;
-        border-width: 1px;
-        border-color: #04060F;
-        font-size: xx-small;
-    }
-    #clearVotesBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #endMovieVotingBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #resultsImage{
-    height:80%;
-    }
+	#map {
+		height: 35vh;
+		z-index: 1;
+	}
+	#filterButtons {
+		z-index: 9999;
+		position: absolute;
+		bottom: 55vh;
+		left: 92vw;
+	}
+	img {
+		width: 20px;
+		height: 20px;
+	}
+	#chat {
+		height: 200px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#userName {
+		width: 25%;
+	}
+	#text {
+		width: 25%;
+	}
+	#results {
+		height: 500px;
+	}
+	.poster {
+		width: 30px;
+		height: 60px;
+	}
+	#vote {
+		height: 96px;
+	}
+	p {
+		color: #04060f;
+		display: inline-block;
+		border-style: ridge;
+		border-width: 1px;
+		border-color: #04060f;
+		font-size: xx-small;
+	}
+	#clearVotesBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#endMovieVotingBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#resultsImage {
+		height: 80%;
+	}
 }
 /* the in between */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1200px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #headerButtons{
-        position: absolute;
-        bottom: -13vh;
-        left: 75vw;
-    }
-    #map{
-        height: 35vh;
-        z-index: 1;
-    }
-    #filterButtons{
-        z-index: 9999; 
-        position: absolute;
-        bottom: 55vh;
-        left: 92vw;
-    }
-    img{
-        width: 20px;  height: 20px 
-    }
-    #chat{
-       height: 200px;
-       padding-left: 0px; 
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-   }
-   #userName{
-       width:25%;
-   }
-   #text{
-    width:25%;
-}
-   #results{
-   height: 500px;
-   }
-   .poster{
-    width: 30px;
-    height: 60px;
-}
-   #vote{
-    height: 96px;
-    }
-    p{
-        color:#04060F;  
-        display: inline-block;
-        border-style: ridge;
-        border-width: 1px;
-        border-color: #04060F;
-        font-size: xx-small;
-    }
-    #winningPoster{
-        height: 20vh;
-    }
-    #clearVotesBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #endMovieVotingBtn{
-        float: right;
-        background-color:#04060F;
-        color:whitesmoke;
-        font-size: x-small;
-        border-radius: 8px;
-        width: 40px;
-    }
-    #resultsImage{
-    height:80%;
-    }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+	#headerButtons {
+		position: absolute;
+		bottom: -13vh;
+		left: 75vw;
+	}
+	#map {
+		height: 35vh;
+		z-index: 1;
+	}
+	#filterButtons {
+		z-index: 9999;
+		position: absolute;
+		bottom: 55vh;
+		left: 92vw;
+	}
+	img {
+		width: 20px;
+		height: 20px;
+	}
+	#chat {
+		height: 200px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#userName {
+		width: 25%;
+	}
+	#text {
+		width: 25%;
+	}
+	#results {
+		height: 500px;
+	}
+	.poster {
+		width: 30px;
+		height: 60px;
+	}
+	#vote {
+		height: 96px;
+	}
+	p {
+		color: #04060f;
+		display: inline-block;
+		border-style: ridge;
+		border-width: 1px;
+		border-color: #04060f;
+		font-size: xx-small;
+	}
+	#winningPoster {
+		height: 20vh;
+	}
+	#clearVotesBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#endMovieVotingBtn {
+		float: right;
+		background-color: #04060f;
+		color: whitesmoke;
+		font-size: x-small;
+		border-radius: 8px;
+		width: 40px;
+	}
+	#resultsImage {
+		height: 80%;
+	}
 }
 /* laptop */
 /* ----------- Non-Retina Screens ----------- */
@@ -578,5 +579,3 @@ h5{
         width: 40px;
     }
 } */
-
-
