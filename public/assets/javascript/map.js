@@ -67,16 +67,7 @@ function geolocationSuccess(position) {
   for (x in userLocations) {
     userLat = JSON.parse(JSON.stringify(userLatLng)).lat
     userLng = JSON.parse(JSON.stringify(userLatLng)).lng
-<<<<<<< HEAD
-    // lat = (JSON.parse(userLocations[x]).lat)
-    // lng = (JSON.parse(userLocations[x]).lng)
-    // console.log(lat,lng, userLat, userLng);
-    // console.log(lat-userLat, lng-userLng);
-
-    if ((Math.abs(lat - userLat) < .05) && (Math.abs(lng - userLng) < .05)) {
-=======
     if ((Math.abs(lat - userLat) < .01) && (Math.abs(lng - userLng) < .01)) {
->>>>>>> 61aa95dba3d0379ec5e041011f97c81ba7e98cd8
       console.log("User too close");
       break;
     } else if (x == userLocations.length - 1) {
