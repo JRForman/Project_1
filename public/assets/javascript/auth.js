@@ -1,12 +1,6 @@
-var config = {
-    apiKey: "AIzaSyANoA9DrfXv3rAsQNmRrC_PPHUuntt0JfA",
-    authDomain: "authentication-c0a07.firebaseapp.com",
-    databaseURL: "https://authentication-c0a07.firebaseio.com",
-    projectId: "authentication-c0a07",
-    storageBucket: "authentication-c0a07.appspot.com",
-    messagingSenderId: "321325391035"
-};
-firebase.initializeApp(config);
+import firebaseConfig from "./config"
+
+firebase.initializeApp(firebaseConfig);
 
 var txtEmail = document.getElementById('txtEmail');
 var txtPassword = document.getElementById("txtPassword");

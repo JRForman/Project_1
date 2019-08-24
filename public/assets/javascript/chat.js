@@ -1,15 +1,7 @@
-// var config = {
+import firebaseConfig from "./config"
+firebase.initializeApp(firebaseConfig);
 
-//     apiKey: "AIzaSyArnnPCAv1wK6DQXsDw_OoxVS_9OQGQxaU",
-//     authDomain: "projectchat-1d35b.firebaseapp.com",
-//     databaseURL: "https://projectchat-1d35b.firebaseio.com",
-//     projectId: "projectchat-1d35b",
-//     storageBucket: "projectchat-1d35b.appspot.com",
-//     messagingSenderId: "798394836558"
-// };
-// firebase.initializeApp(config);
-
-// var database = firebase.database();
+var database = firebase.database();
 
 $("#post").on("click", function () {
     var msgUser = $("#userName").val();
